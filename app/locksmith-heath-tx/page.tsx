@@ -8,11 +8,11 @@ import { createLocationSchema, createFAQSchema, createBreadcrumbSchema } from '@
 
 export const metadata: Metadata = {
   title: `Locksmith Heath TX | 24/7 Emergency | ${BUSINESS_NAME}`,
-  description: 'Trusted locksmith serving Heath TX. Emergency lockouts, rekeying, car keys, smart locks & commercial security. Licensed & insured. Call (833) 632-3357.',
+  description: 'Trusted locksmith serving Heath TX. Emergency lockouts, rekeying, car keys, smart locks & commercial security. Licensed & insured. Call (575) 573-2625.',
   alternates: { canonical: `${SITE_URL}/locksmith-heath-tx/` },
   openGraph: {
     title: `Locksmith Heath TX | ${BUSINESS_NAME}`,
-    description: 'Licensed 24/7 locksmith in Heath TX. Fast response, upfront pricing. Call (833) 632-3357.',
+    description: 'Licensed 24/7 locksmith in Heath TX. Fast response, upfront pricing. Call (575) 573-2625.',
     url: `${SITE_URL}/locksmith-heath-tx/`,
   },
 }

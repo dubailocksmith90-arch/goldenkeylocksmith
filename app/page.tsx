@@ -561,7 +561,7 @@ export default function HomePage() {
                 step: '1',
                 icon: '📞',
                 title: 'Call Us',
-                desc: 'Call (833) 632-3357 anytime. Our friendly dispatch team answers 24/7 and will get your info.',
+                desc: 'Call (575) 573-2625 anytime. Our friendly dispatch team answers 24/7 and will get your info.',
               },
               {
                 step: '2',

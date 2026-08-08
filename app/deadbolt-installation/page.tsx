@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Deadbolt Installation Dallas TX | Grade 1 Locks | $75–$200',
   description:
-    'Professional deadbolt installation in Dallas TX. ANSI Grade 1 locks — Schlage, Kwikset, Medeco. Single & double cylinder. $75–$200 installed. Call (833) 632-3357.',
+    'Professional deadbolt installation in Dallas TX. ANSI Grade 1 locks — Schlage, Kwikset, Medeco. Single & double cylinder. $75–$200 installed. Call (575) 573-2625.',
 }
 
 const faqs = [
