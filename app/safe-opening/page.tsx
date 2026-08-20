@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Safe Opening Dallas TX | Combination, Digital, Gun Safe | $75–$200',
   description:
-    'Professional safe opening in Dallas TX. Combination, digital, gun safe, fire safe. Non-destructive methods first. $75–$200. Licensed locksmith. Call (575) 573-2625.',
+    'Professional safe opening in Dallas TX. Combination, digital, gun safe, fire safe. Non-destructive methods first. $75–$200. Licensed locksmith. Call (917) 203-4678.',
 }
 
 const faqs = [

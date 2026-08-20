@@ -9,9 +9,9 @@ import { createServiceSchema, createFAQSchema, createBreadcrumbSchema } from '@/
 
 export const metadata: Metadata = {
   title: 'Motorcycle Key Replacement Dallas TX | Lost Bike Key | Golden\'s Keys',
-  description: 'Lost your motorcycle key in Dallas TX? We cut and program motorcycle keys on-site for most makes. Harley-Davidson, Honda, Yamaha, Kawasaki, Suzuki & more. Call (575) 573-2625.',
+  description: 'Lost your motorcycle key in Dallas TX? We cut and program motorcycle keys on-site for most makes. Harley-Davidson, Honda, Yamaha, Kawasaki, Suzuki & more. Call (917) 203-4678.',
   alternates: { canonical: `${SITE_URL}/motorcycle-key-replacement/` },
-  openGraph: { title: 'Motorcycle Key Replacement Dallas TX', description: 'On-site motorcycle key replacement in Dallas TX. All major brands. Call (575) 573-2625.', url: `${SITE_URL}/motorcycle-key-replacement/` },
+  openGraph: { title: 'Motorcycle Key Replacement Dallas TX', description: 'On-site motorcycle key replacement in Dallas TX. All major brands. Call (917) 203-4678.', url: `${SITE_URL}/motorcycle-key-replacement/` },
 }
 
 const faqs = [

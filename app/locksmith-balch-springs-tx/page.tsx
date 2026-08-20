@@ -8,11 +8,11 @@ import { createLocationSchema, createFAQSchema, createBreadcrumbSchema } from '@
 
 export const metadata: Metadata = {
   title: `Locksmith Balch Springs TX | 24/7 Emergency | ${BUSINESS_NAME}`,
-  description: 'Trusted locksmith serving Balch Springs TX. Emergency lockouts, rekeying, car keys, smart locks & commercial security. Licensed & insured. Call (575) 573-2625.',
+  description: 'Trusted locksmith serving Balch Springs TX. Emergency lockouts, rekeying, car keys, smart locks & commercial security. Licensed & insured. Call (917) 203-4678.',
   alternates: { canonical: `${SITE_URL}/locksmith-balch-springs-tx/` },
   openGraph: {
     title: `Locksmith Balch Springs TX | ${BUSINESS_NAME}`,
-    description: 'Licensed 24/7 locksmith in Balch Springs TX. Fast response, upfront pricing. Call (575) 573-2625.',
+    description: 'Licensed 24/7 locksmith in Balch Springs TX. Fast response, upfront pricing. Call (917) 203-4678.',
     url: `${SITE_URL}/locksmith-balch-springs-tx/`,
   },
 }

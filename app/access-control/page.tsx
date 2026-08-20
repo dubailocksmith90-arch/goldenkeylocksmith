@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Access Control Systems Dallas TX | Keypad, Card Reader, Biometric',
   description:
-    'Access control installation in Dallas TX. Keypad, card reader, biometric, and cloud-based systems. Small to large businesses. Free site assessment. Call (575) 573-2625.',
+    'Access control installation in Dallas TX. Keypad, card reader, biometric, and cloud-based systems. Small to large businesses. Free site assessment. Call (917) 203-4678.',
 }
 
 const faqs = [

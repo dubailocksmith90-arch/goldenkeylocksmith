@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Rekeying Services Dallas TX | $15–$35/Lock | Same-Day',
   description:
-    'Professional rekeying services in Dallas TX. Moving in? Lost keys? Rekey your locks same day for $15–$35/lock. All brands. Licensed locksmith. Call (575) 573-2625.',
+    'Professional rekeying services in Dallas TX. Moving in? Lost keys? Rekey your locks same day for $15–$35/lock. All brands. Licensed locksmith. Call (917) 203-4678.',
 }
 
 const faqs = [

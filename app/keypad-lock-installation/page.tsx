@@ -9,9 +9,9 @@ import { createServiceSchema, createFAQSchema, createBreadcrumbSchema } from '@/
 
 export const metadata: Metadata = {
   title: 'Keypad Lock Installation Dallas TX | Electronic Deadbolts | Golden\'s Keys',
-  description: 'Professional keypad lock installation in Dallas TX. Schlage, Kwikset, and Defiant electronic deadbolts for homes and businesses. No more lost keys. Call (575) 573-2625.',
+  description: 'Professional keypad lock installation in Dallas TX. Schlage, Kwikset, and Defiant electronic deadbolts for homes and businesses. No more lost keys. Call (917) 203-4678.',
   alternates: { canonical: `${SITE_URL}/keypad-lock-installation/` },
-  openGraph: { title: 'Keypad Lock Installation Dallas TX | Golden\'s Keys', description: 'Electronic keypad deadbolt installation for homes and businesses in Dallas TX. Call (575) 573-2625.', url: `${SITE_URL}/keypad-lock-installation/` },
+  openGraph: { title: 'Keypad Lock Installation Dallas TX | Golden\'s Keys', description: 'Electronic keypad deadbolt installation for homes and businesses in Dallas TX. Call (917) 203-4678.', url: `${SITE_URL}/keypad-lock-installation/` },
 }
 
 const faqs = [

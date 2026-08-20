@@ -9,9 +9,9 @@ import { createServiceSchema, createFAQSchema, createBreadcrumbSchema } from '@/
 
 export const metadata: Metadata = {
   title: 'New Homeowner Lock Services Dallas TX | Rekey After Moving | Golden\'s Keys',
-  description: 'Just moved to Dallas TX? Rekey or replace all your locks — fast, affordable new homeowner lock service. We handle the whole house in one visit. Call (575) 573-2625.',
+  description: 'Just moved to Dallas TX? Rekey or replace all your locks — fast, affordable new homeowner lock service. We handle the whole house in one visit. Call (917) 203-4678.',
   alternates: { canonical: `${SITE_URL}/new-homeowner-locks/` },
-  openGraph: { title: 'New Homeowner Lock Services Dallas TX', description: 'Rekey your new home\'s locks in one visit. $99–$149 for most homes. Call (575) 573-2625.', url: `${SITE_URL}/new-homeowner-locks/` },
+  openGraph: { title: 'New Homeowner Lock Services Dallas TX', description: 'Rekey your new home\'s locks in one visit. $99–$149 for most homes. Call (917) 203-4678.', url: `${SITE_URL}/new-homeowner-locks/` },
 }
 
 const faqs = [

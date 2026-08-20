@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'High Security Locks Dallas TX | Medeco, Mul-T-Lock | $200–$500',
   description:
-    'High security lock installation in Dallas TX. Medeco, Mul-T-Lock, ASSA ABLOY. Pick-resistant, bump-resistant, drill-resistant. $200–$500 installed. Call (575) 573-2625.',
+    'High security lock installation in Dallas TX. Medeco, Mul-T-Lock, ASSA ABLOY. Pick-resistant, bump-resistant, drill-resistant. $200–$500 installed. Call (917) 203-4678.',
 }
 
 const faqs = [

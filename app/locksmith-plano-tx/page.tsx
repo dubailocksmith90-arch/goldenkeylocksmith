@@ -10,7 +10,7 @@ import { PHONE, PHONE_HREF, serviceAreas } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Locksmith Plano TX | 24/7 Emergency | Licensed & Insured',
   description:
-    'Trusted locksmith in Plano TX. Legacy, West Plano, East Plano. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (575) 573-2625.',
+    'Trusted locksmith in Plano TX. Legacy, West Plano, East Plano. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (917) 203-4678.',
 }
 
 const faqs = [

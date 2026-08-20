@@ -10,7 +10,7 @@ import { PHONE, PHONE_HREF, BUSINESS_NAME, ADDRESS, EMAIL, RATING, REVIEW_COUNT,
 export const metadata: Metadata = {
   title: 'Locksmith Dallas TX | 24/7 Emergency | Licensed & Insured',
   description:
-    'Trusted locksmith in Dallas TX — Casa Linda, East Dallas, Lakewood, and all of Dallas County. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (575) 573-2625.',
+    'Trusted locksmith in Dallas TX — Casa Linda, East Dallas, Lakewood, and all of Dallas County. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (917) 203-4678.',
 }
 
 const jsonLd = {
@@ -18,7 +18,7 @@ const jsonLd = {
   '@type': 'Locksmith',
   name: BUSINESS_NAME,
   url: SITE_URL,
-  telephone: '+15755732625',
+  telephone: '+19172034678',
   email: EMAIL,
   address: {
     '@type': 'PostalAddress',

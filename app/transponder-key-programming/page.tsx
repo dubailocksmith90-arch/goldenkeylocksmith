@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Transponder Key Programming Dallas TX | $75–$250 | On-Site',
   description:
-    'Transponder key programming in Dallas TX. All major brands — Toyota, Honda, Ford, Chevy, Nissan, Dodge. On-site programming $75–$250. Licensed. Call (575) 573-2625.',
+    'Transponder key programming in Dallas TX. All major brands — Toyota, Honda, Ford, Chevy, Nissan, Dodge. On-site programming $75–$250. Licensed. Call (917) 203-4678.',
 }
 
 const faqs = [

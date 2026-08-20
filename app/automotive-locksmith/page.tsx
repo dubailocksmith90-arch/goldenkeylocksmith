@@ -9,7 +9,7 @@ import { PHONE, PHONE_HREF } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Automotive Locksmith Dallas TX | Car Lockout, Transponder Keys',
   description:
-    'Licensed automotive locksmith in Dallas TX. Car lockout, transponder key programming, car key replacement, ignition repair, key fob. All makes & models. Call (575) 573-2625.',
+    'Licensed automotive locksmith in Dallas TX. Car lockout, transponder key programming, car key replacement, ignition repair, key fob. All makes & models. Call (917) 203-4678.',
 }
 
 const faqs = [
