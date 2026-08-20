@@ -1,0 +1,14 @@
+{
+  "name": "Golden's Casa Linda Keys",
+  "short_name": "Golden's Keys",
+  "description": "24/7 Locksmith in Dallas TX — Emergency lockout, rekeying, car keys.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a2744",
+  "theme_color": "#f5a623",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
