@@ -8,9 +8,11 @@ import CTABanner from '@/components/CTABanner'
 import { PHONE, PHONE_HREF, BUSINESS_NAME, ADDRESS, EMAIL, RATING, REVIEW_COUNT, serviceAreas, SITE_URL } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Locksmith Dallas TX | 24/7 Emergency | Licensed & Insured',
+  title: 'Locksmith Dallas TX | 24/7 | $65+ | (917) 203-4678',
   description:
-    'Trusted locksmith in Dallas TX — Casa Linda, East Dallas, Lakewood, and all of Dallas County. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (917) 203-4678.',
+    'Locksmith in Dallas TX — Casa Linda, East Dallas, Lakewood, ZIP 75218 & all Dallas County. 24/7 house lockout $65–$125, rekeying $15–$35/lock. Licensed since 2004. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/locksmith-dallas-tx` },
+  keywords: 'locksmith dallas tx, dallas locksmith, lockout dallas tx, locksmith 75218, emergency locksmith dallas tx, locksmith near me dallas, house lockout service dallas tx',
 }
 
 const jsonLd = {
@@ -54,6 +56,14 @@ const faqs = [
   {
     q: 'Are you the cheapest locksmith in Dallas?',
     a: "We're not always the cheapest — but we're consistently the best value. We use licensed, background-checked technicians, provide upfront pricing, and guarantee our work. Many 'cheap' locksmiths add hidden fees after arrival.",
+  },
+  {
+    q: 'Do you serve ZIP code 75218 and Casa Linda in Dallas?',
+    a: 'Yes — 75218 is our home base. Golden\'s Casa Linda Keys is based in the Casa Linda neighborhood of East Dallas. We know every street in 75218 and respond faster here than anywhere else.',
+  },
+  {
+    q: 'What is the response time for a lockout in Dallas TX?',
+    a: 'Average 15–45 minutes throughout Dallas city limits. We dispatch the nearest available technician immediately. For ZIP codes 75218, 75228, 75214 (our home base area) we are often there in under 20 minutes.',
   },
 ]
 

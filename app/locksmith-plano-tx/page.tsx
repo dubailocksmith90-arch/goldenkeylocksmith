@@ -5,36 +5,68 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF, serviceAreas } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL, BUSINESS_NAME, RATING, REVIEW_COUNT, serviceAreas } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Locksmith Plano TX | 24/7 Emergency | Licensed & Insured',
+  title: 'Locksmith Plano TX | 24/7 Emergency | (917) 203-4678',
   description:
-    'Trusted locksmith in Plano TX. Legacy, West Plano, East Plano. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (917) 203-4678.',
+    'Locksmith in Plano TX — Legacy, West Plano, East Plano. 24/7 house lockout $65–$125, car lockout $50–$100, rekeying $15–$35/lock. Licensed & insured. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/locksmith-plano-tx` },
+  keywords: 'locksmith plano tx, plano locksmith, locksmith plano, emergency locksmith plano tx, locksmith plano texas, locksmith 75074, locksmith 75024, locksmith 75025',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': ['Locksmith', 'LocalBusiness'],
+  '@id': `${SITE_URL}/locksmith-plano-tx/#business`,
+  name: `${BUSINESS_NAME} — Plano TX`,
+  url: `${SITE_URL}/locksmith-plano-tx`,
+  telephone: '+19172034678',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Plano',
+    addressRegion: 'TX',
+    postalCode: '75074',
+    addressCountry: 'US',
+  },
+  geo: { '@type': 'GeoCoordinates', latitude: 33.0198, longitude: -96.6989 },
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' }],
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: RATING, reviewCount: REVIEW_COUNT, bestRating: '5' },
+  priceRange: '$$',
+  areaServed: { '@type': 'City', name: 'Plano', containedIn: 'TX' },
 }
 
 const faqs = [
   {
     q: 'How quickly can you respond to a lockout in Plano TX?',
-    a: 'Plano is about 25–40 minutes from our Casa Linda base depending on location. Northern Plano (Legacy area) may take slightly longer. We dispatch immediately upon your call.',
+    a: 'Plano is about 25–40 minutes from our Casa Linda base. We dispatch the nearest available technician immediately — Northern Plano (Legacy, 75024/75025) and all ZIP codes including 75074, 75075, 75023.',
   },
   {
-    q: 'Do you serve the Legacy Town Center area in Plano?',
-    a: 'Yes. We serve all of Plano including the Legacy area (75024/75025), West Plano, and East Plano neighborhoods. Call us wherever you are in Plano.',
+    q: 'What does a locksmith cost in Plano TX?',
+    a: 'House lockout in Plano TX: $65–$125. Car lockout: $50–$100. Rekeying: $15–$35 per lock. Car key programming: $75–$250. We always quote before starting — no hidden fees.',
+  },
+  {
+    q: 'Do you serve Legacy and West Plano?',
+    a: 'Yes. We serve all of Plano — Legacy Town Center (75024/75025), West Plano, East Plano, Central Plano, Toyota HQ area, and the Collin Creek corridor. Call us anywhere in Plano TX.',
   },
   {
     q: 'Can you program a car key for a Toyota or Honda in Plano?',
-    a: 'Yes. We carry key programming equipment for Toyota, Honda, Ford, GM, and most other makes. On-site key programming in Plano — no tow truck needed.',
+    a: 'Yes. We carry on-site key programming equipment for Toyota, Honda, Ford, Chevrolet, Nissan, and most other makes. No tow truck needed — we come to you in Plano.',
+  },
+  {
+    q: 'Is there an emergency locksmith in Plano TX available at night?',
+    a: 'Yes. We answer 24/7 — midnight, weekends, and holidays included. Emergency locksmith service in Plano TX with a small after-hours fee of $25–$50 between 10pm–6am.',
   },
   {
     q: 'Do you do smart lock installation in Plano?',
-    a: 'Yes. Smart lock installation is one of our most popular services in Plano. We install Schlage Encode, August Smart Lock, Yale, and Kwikset Halo at homes throughout Plano.',
+    a: 'Yes. Smart lock installation is very popular in Plano. We install Schlage Encode, August Smart Lock, Yale Assure, and Kwikset Halo at homes and businesses throughout Plano TX.',
   },
 ]
 
 export default function LocksmithPlanoTXPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[{ label: 'Locksmith Plano TX' }]} />
       <PageHero
         badge="📍 Plano TX"

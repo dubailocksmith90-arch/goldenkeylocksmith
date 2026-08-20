@@ -4,12 +4,14 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Emergency Locksmith Dallas TX | 24/7 Fast Response',
+  title: 'Emergency Locksmith Dallas TX | 15–45 Min | (917) 203-4678',
   description:
-    '24/7 emergency locksmith in Dallas TX. Locked out of your house, car, or office? We dispatch in minutes. Licensed, bonded, insured. Call (917) 203-4678 now.',
+    '24/7 emergency locksmith Dallas TX — house lockout $65–$125, car lockout $50–$100, office lockout. Licensed & insured, 15–45 min response, no hidden fees. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/emergency-locksmith` },
+  keywords: 'emergency locksmith dallas tx, emergency locksmith dallas, 24/7 locksmith dallas tx, emergency locksmith near me dallas, lockout service dallas tx',
 }
 
 const jsonLd = {

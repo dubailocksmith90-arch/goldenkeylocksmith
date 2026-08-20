@@ -5,36 +5,58 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF, serviceAreas } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL, BUSINESS_NAME, RATING, REVIEW_COUNT, serviceAreas } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Locksmith Rowlett TX | 24/7 Emergency | Licensed & Insured',
+  title: 'Locksmith Rowlett TX | 24/7 | ZIP 75088 | (917) 203-4678',
   description:
-    'Trusted locksmith in Rowlett TX. Waterview, Main Street area, Lake Ray Hubbard. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (917) 203-4678.',
+    'Locksmith in Rowlett TX — Waterview, Lake Ray Hubbard, ZIP 75088/75089. 24/7 house lockout $65–$125, rekeying $15–$35/lock, car lockout $50–$100. Licensed. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/locksmith-rowlett-tx` },
+  keywords: 'locksmith rowlett tx, rowlett locksmith, locksmith rowlett, locksmith 75088, rowlett texas locksmith, locksmith in rowlett tx, emergency locksmith rowlett',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': ['Locksmith', 'LocalBusiness'],
+  '@id': `${SITE_URL}/locksmith-rowlett-tx/#business`,
+  name: `${BUSINESS_NAME} — Rowlett TX`,
+  url: `${SITE_URL}/locksmith-rowlett-tx`,
+  telephone: '+19172034678',
+  address: { '@type': 'PostalAddress', addressLocality: 'Rowlett', addressRegion: 'TX', postalCode: '75088', addressCountry: 'US' },
+  geo: { '@type': 'GeoCoordinates', latitude: 32.9026, longitude: -96.5637 },
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' }],
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: RATING, reviewCount: REVIEW_COUNT, bestRating: '5' },
+  priceRange: '$$',
+  areaServed: { '@type': 'City', name: 'Rowlett', containedIn: 'TX' },
 }
 
 const faqs = [
   {
     q: 'How quickly can you respond to a lockout in Rowlett TX?',
-    a: 'Rowlett is about 25–45 minutes from our Casa Linda base. We dispatch the nearest available technician immediately and provide you a confirmed ETA when you call.',
+    a: 'Rowlett is about 25–45 minutes from our Casa Linda base. We dispatch the nearest available technician immediately — ZIP codes 75088 and 75089, Waterview, Main Street, and all Rowlett neighborhoods.',
   },
   {
-    q: 'Do you serve all of Rowlett?',
-    a: 'Yes — all Rowlett neighborhoods including Waterview, the Main Street corridor, and lakefront areas near Lake Ray Hubbard. ZIP codes: 75088 and 75089.',
+    q: 'What does a locksmith cost in Rowlett TX?',
+    a: 'House lockout in Rowlett: $65–$125. Car lockout: $50–$100. Rekeying: $15–$35/lock. Car key programming: $75–$250. Free phone estimates — call (917) 203-4678.',
+  },
+  {
+    q: 'Do you serve ZIP code 75088 in Rowlett?',
+    a: 'Yes — 75088 is our primary Rowlett ZIP code. We serve all of Rowlett including 75088 and 75089, from Waterview and Lake Ray Hubbard to the Main Street corridor and Liberty Grove.',
   },
   {
     q: 'Can you help if I am locked out near Lake Ray Hubbard?',
-    a: 'Absolutely. Whether you are at a lakefront home, a boat ramp parking lot, or anywhere around Lake Ray Hubbard, we come to your location and get you back in your vehicle or home quickly.',
+    a: 'Absolutely. Whether you are at a lakefront home, boat ramp, or park near Lake Ray Hubbard, we come to your exact location and get you back in quickly.',
   },
   {
-    q: 'Do you service the Waterview neighborhood?',
-    a: "Yes. Waterview is a large master-planned community in Rowlett and we handle lockouts, rekeying, and all locksmith services throughout the neighborhood. We know the area well.",
+    q: 'Do you service the Waterview neighborhood in Rowlett?',
+    a: 'Yes. Waterview is one of our most frequently served communities in Rowlett. We handle lockouts, rekeying, car keys, and all locksmith services throughout Waterview and surrounding areas.',
   },
 ]
 
 export default function LocksmithRowlettTXPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[{ label: 'Locksmith Rowlett TX' }]} />
       <PageHero
         badge="📍 Rowlett TX"

@@ -4,12 +4,35 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL, BUSINESS_NAME, RATING, REVIEW_COUNT } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'House Lockout Dallas TX | 24/7 Emergency | $65–$125',
+  title: 'House Lockout Dallas TX | 24/7 | $65–$125 | (917) 203-4678',
   description:
-    'Locked out of your house in Dallas TX? 24/7 emergency lockout service. Non-destructive entry. 15–45 min response. $65–$125. Licensed locksmith. Call (917) 203-4678.',
+    'Locked out of your house in Dallas TX? Licensed locksmith dispatched in minutes — 24/7. Non-destructive entry, 15–45 min response, $65–$125. Call (917) 203-4678 now.',
+  alternates: { canonical: `${SITE_URL}/house-lockout` },
+  keywords: 'house lockout dallas tx, home lockout dallas, residential lockout dallas, house lockout service dallas tx, locked out of house dallas, house lockout 24/7',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${SITE_URL}/house-lockout/#service`,
+  name: 'House Lockout Service Dallas TX',
+  description: '24/7 emergency house lockout service in Dallas TX. Non-destructive entry, 15–45 min response. $65–$125.',
+  url: `${SITE_URL}/house-lockout`,
+  provider: {
+    '@type': 'Locksmith',
+    name: BUSINESS_NAME,
+    telephone: '+19172034678',
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: RATING, reviewCount: REVIEW_COUNT, bestRating: '5' },
+  },
+  offers: { '@type': 'Offer', priceRange: '$65–$125', priceCurrency: 'USD' },
+  areaServed: { '@type': 'City', name: 'Dallas', containedIn: 'TX' },
+  availableChannel: {
+    '@type': 'ServiceChannel',
+    servicePhone: { '@type': 'ContactPoint', telephone: '+19172034678', contactType: 'emergency', availableLanguage: 'English' },
+  },
 }
 
 const faqs = [
@@ -33,11 +56,20 @@ const faqs = [
     q: 'What if I locked my keys inside and the door is deadbolted?',
     a: "A deadbolt doesn't change our process significantly. We can pick or bypass most residential deadbolts without damage. It may take a couple extra minutes but we handle double-deadbolted doors regularly.",
   },
+  {
+    q: 'Can you rekey my locks after a house lockout?',
+    a: "Yes — and we recommend it if you've lost your keys. We can open your door and rekey all your locks in the same visit starting at $15–$35 per lock. This ensures old keys no longer work.",
+  },
+  {
+    q: 'What areas of Dallas do you respond to for house lockouts?',
+    a: 'We respond to all Dallas neighborhoods — Casa Linda (75218), East Dallas (75228), Lakewood (75214), Lake Highlands, Uptown, Oak Lawn, South Dallas, and all surrounding suburbs. Average arrival: 15–45 minutes.',
+  },
 ]
 
 export default function HouseLockoutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[{ label: 'House Lockout' }]} />
       <PageHero
         emergency

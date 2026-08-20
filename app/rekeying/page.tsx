@@ -4,12 +4,14 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Rekeying Services Dallas TX | $15–$35/Lock | Same-Day',
+  title: 'Rekeying Dallas TX | $15–$35/Lock | Same-Day | (917) 203-4678',
   description:
-    'Professional rekeying services in Dallas TX. Moving in? Lost keys? Rekey your locks same day for $15–$35/lock. All brands. Licensed locksmith. Call (917) 203-4678.',
+    'House rekeying service in Dallas TX — moving in, lost keys, or security upgrade. $15–$35/lock, full home rekey $99–$149. Same-day, licensed locksmith. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/rekeying` },
+  keywords: 'rekeying dallas tx, house rekey services, residential rekeying, rekey locks dallas tx, rekey house dallas, lock rekeying dallas, house re key services',
 }
 
 const faqs = [

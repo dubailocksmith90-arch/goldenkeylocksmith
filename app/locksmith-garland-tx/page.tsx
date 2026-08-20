@@ -5,36 +5,58 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF, serviceAreas } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL, BUSINESS_NAME, RATING, REVIEW_COUNT, serviceAreas } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Locksmith Garland TX | 24/7 Emergency | Licensed & Insured',
+  title: 'Locksmith Garland TX | 24/7 Emergency | (917) 203-4678',
   description:
-    'Trusted locksmith in Garland TX. Firewheel, North Garland, South Garland. 24/7 emergency lockout, rekeying, car keys. Licensed & insured. Call (917) 203-4678.',
+    'Locksmith in Garland TX — Firewheel, North & South Garland, ZIP 75040–75044. 24/7 house lockout $65–$125, rekeying $15–$35/lock, car keys. Licensed & insured. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/locksmith-garland-tx` },
+  keywords: 'locksmith garland tx, garland locksmith, locksmith garland, locksmith in garland tx, emergency locksmith garland tx, locksmith garland texas',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': ['Locksmith', 'LocalBusiness'],
+  '@id': `${SITE_URL}/locksmith-garland-tx/#business`,
+  name: `${BUSINESS_NAME} — Garland TX`,
+  url: `${SITE_URL}/locksmith-garland-tx`,
+  telephone: '+19172034678',
+  address: { '@type': 'PostalAddress', addressLocality: 'Garland', addressRegion: 'TX', postalCode: '75040', addressCountry: 'US' },
+  geo: { '@type': 'GeoCoordinates', latitude: 32.9126, longitude: -96.6389 },
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' }],
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: RATING, reviewCount: REVIEW_COUNT, bestRating: '5' },
+  priceRange: '$$',
+  areaServed: { '@type': 'City', name: 'Garland', containedIn: 'TX' },
 }
 
 const faqs = [
   {
     q: 'How fast can you get to Garland TX?',
-    a: 'We typically arrive in 20–40 minutes from our Casa Linda base. If we have a technician already in the Garland area, it can be faster.',
+    a: 'We typically arrive in 20–40 minutes from our Casa Linda base. If we have a technician already in the Garland area, it can be faster. We serve all Garland ZIP codes: 75040, 75041, 75042, 75043, 75044.',
+  },
+  {
+    q: 'What does a locksmith cost in Garland TX?',
+    a: 'House lockout in Garland: $65–$125. Car lockout: $50–$100. Rekeying: $15–$35/lock. Car key programming: $75–$250. Free phone estimates — call (917) 203-4678.',
   },
   {
     q: 'Do you serve all areas of Garland?',
-    a: 'Yes — Firewheel, North Garland, South Garland, Rowlett Creek area, and all of Garland. All ZIP codes: 75040, 75041, 75042, 75043, 75044.',
+    a: 'Yes — Firewheel, North Garland, South Garland, Rowlett Creek area, Duck Creek, Heritage District, and all of Garland TX. We know every neighborhood.',
   },
   {
     q: 'Can you rekey my house in Garland the same day?',
-    a: 'Yes. Same-day rekeying is available across Garland TX. $15–$35 per lock, or $99–$149 for a full home rekey.',
+    a: 'Yes. Same-day rekeying is available across Garland TX. $15–$35 per lock, or $99–$149 for a full home rekey. We can also combine a lockout visit with rekeying in one trip.',
   },
   {
     q: 'Do you handle commercial lockouts in Garland?',
-    a: 'Yes. We service commercial properties throughout Garland — offices near Firewheel Town Center, retail spaces, and industrial facilities in the 75041–75042 corridors.',
+    a: 'Yes. We service commercial properties throughout Garland — offices near Firewheel Town Center, retail spaces on Jupiter Road, and industrial facilities in the 75041–75042 corridors.',
   },
 ]
 
 export default function LocksmithGarlandTXPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[{ label: 'Locksmith Garland TX' }]} />
       <PageHero
         badge="📍 Garland TX"

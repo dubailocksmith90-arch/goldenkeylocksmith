@@ -48,6 +48,8 @@ const nextConfig = {
     ]
   },
 
+  trailingSlash: false,
+
   async redirects() {
     return [
       {
@@ -56,11 +58,14 @@ const nextConfig = {
         destination: 'https://goldenskeys.com/:path*',
         permanent: true,
       },
-      {
-        source: '/home',
-        destination: '/',
-        permanent: true,
-      },
+      { source: '/home', destination: '/', permanent: true },
+      { source: '/mailbox-locks/', destination: '/mailbox-locks', permanent: true },
+      { source: '/motorcycle-key-replacement/', destination: '/motorcycle-key-replacement', permanent: true },
+      { source: '/safe-opening/', destination: '/safe-opening', permanent: true },
+      { source: '/key-fob-programming/', destination: '/key-fob-programming', permanent: true },
+      { source: '/panic-bar-installation/', destination: '/panic-bar-installation', permanent: true },
+      { source: '/lock-repair/', destination: '/lock-repair', permanent: true },
+      { source: '/locksmith-casa-linda/', destination: '/locksmith-casa-linda', permanent: true },
     ]
   },
 

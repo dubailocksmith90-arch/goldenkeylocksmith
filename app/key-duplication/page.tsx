@@ -4,12 +4,35 @@ import PageHero from '@/components/PageHero'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import FAQAccordion from '@/components/FAQAccordion'
 import CTABanner from '@/components/CTABanner'
-import { PHONE, PHONE_HREF } from '@/lib/data'
+import { PHONE, PHONE_HREF, SITE_URL, BUSINESS_NAME, RATING, REVIEW_COUNT } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Key Duplication Dallas TX | Same-Day | All Key Types',
+  title: 'Key Duplication Dallas TX | Same-Day from $3 | (917) 203-4678',
   description:
-    'Professional key duplication in Dallas TX. Standard, transponder, push-to-start, mailbox, and padlock keys. Same-day service from $3. Call (917) 203-4678.',
+    'Key duplication near you in Dallas TX. House keys from $3, transponder car keys from $20, mailbox key copy, push-to-start fobs. Same-day. Licensed locksmith. Call (917) 203-4678.',
+  alternates: { canonical: `${SITE_URL}/key-duplication` },
+  keywords: 'key duplication dallas tx, key duplication service near me, house key copy near me, keys made near me, key copies near me, mailbox key copy near me, how much does it cost to duplicate a house key',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${SITE_URL}/key-duplication/#service`,
+  name: 'Key Duplication Dallas TX',
+  description: 'Same-day key duplication in Dallas TX — house keys from $3, transponder car keys from $20, mailbox keys, push-to-start fobs.',
+  url: `${SITE_URL}/key-duplication`,
+  provider: {
+    '@type': 'Locksmith',
+    name: BUSINESS_NAME,
+    telephone: '+19172034678',
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: RATING, reviewCount: REVIEW_COUNT, bestRating: '5' },
+  },
+  offers: { '@type': 'Offer', priceRange: '$3–$200', priceCurrency: 'USD' },
+  areaServed: { '@type': 'City', name: 'Dallas', containedIn: 'TX' },
+  availableChannel: {
+    '@type': 'ServiceChannel',
+    servicePhone: { '@type': 'ContactPoint', telephone: '+19172034678', contactType: 'customer service', availableLanguage: 'English' },
+  },
 }
 
 const faqs = [
@@ -33,11 +56,20 @@ const faqs = [
     q: 'Can you copy mailbox or padlock keys?',
     a: 'Yes — we copy mailbox keys, padlock keys, cabinet keys, and most other standard key types. Bring your original key and we can usually make a copy in minutes.',
   },
+  {
+    q: 'How much does it cost to duplicate a house key in Dallas?',
+    a: 'A standard house key copy costs $3–$15 in Dallas TX. High-security or restricted keys cost more. We carry cutting equipment on every service vehicle so you get your key copy on the spot.',
+  },
+  {
+    q: 'Where can I get a key made near me in Dallas TX?',
+    a: "Call (917) 203-4678 and we'll come to you anywhere in Dallas TX. We're a mobile locksmith — no need to drive to a hardware store. We cut and program keys on-site, same day.",
+  },
 ]
 
 export default function KeyDuplicationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[{ label: 'Key Duplication' }]} />
       <PageHero
         badge="🗝️ Key Duplication"
